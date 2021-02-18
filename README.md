@@ -43,6 +43,31 @@ We will be evaluating
 5. When complete please check your code into your public git repo
 
 #### Test Cases
+Happy path:
+1. Placing the order  (with all filled fields)
+2. Placing the order  (with mandatory filled fields only)
+3. Reset order form 
+4. Test for verification of cost calculation
 
- 1.  
+Negative:
+1. Placing the order (without filled 'Name','Phone' fields)
+2. Placing the order (without filled 'Name' field)
+3. Placing the order (without filled 'Phone' field)
+4. Placing the order (select both Payment Information pickers, fill all fields)
+
+Validation:
+1. Test for validation of mandatory fields ('Name','Phone')(I need requirements)
+2. Test for validation of quantity and cost fields (I need requirements) For checking negative cases use(letters
+, special characters)
+
+For checking boundary values the requirements are required for fields  
+
+Issues:
+1. Selected toppings are not displayed on confirmation popup.
+2. 'Toppings 1' and 'Toppings2' fields are not reset after click on 'Reset' button.
+3. There is no sense to place order without filled info in "Pizza Order Form" (Now it is possible)
+4. It is possible to select both toppings if selected pizza type without toppings.
+5. There are no validation for 'Phone','Email','Quantity' fields
+6. Calculated cost value should not be changed manually
+
 
